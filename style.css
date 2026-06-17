@@ -305,6 +305,42 @@ footer a {
 }
 footer a:hover { text-decoration: underline; }
 
+/* ============ zero-md 라이트 강제 ============ */
+.markdown-body,
+zero-md .markdown-body {
+  background: transparent !important;
+  color: var(--ink) !important;
+  color-scheme: light !important;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3,
+.markdown-body h4, .markdown-body h5, .markdown-body h6 {
+  color: var(--ink) !important;
+  font-family: 'Gaegu', 'Fredoka', cursive !important;
+  border-bottom-color: var(--border-soft) !important;
+}
+.markdown-body p, .markdown-body li, .markdown-body td {
+  color: var(--ink) !important;
+}
+.markdown-body a { color: var(--accent2) !important; }
+.markdown-body code, .markdown-body pre {
+  background: #F3E8FF !important;
+  color: var(--ink) !important;
+}
+.markdown-body blockquote {
+  border-left-color: var(--accent) !important;
+  color: var(--muted) !important;
+  background: #FAF7F2 !important;
+}
+.markdown-body hr {
+  border-color: var(--border-soft) !important;
+}
+.markdown-body table tr {
+  background: transparent !important;
+}
+.markdown-body table tr:nth-child(2n) {
+  background: #F9F5F0 !important;
+}
+
 /* ============ 모바일 ============ */
 @media (max-width: 480px) {
   .demo-card { border-radius: 10px; }
